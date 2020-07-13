@@ -400,7 +400,6 @@ nav ul li a {
 
 #portfolio {
   position: relative;
-  padding-bottom: 50px;
 }
 
 #portfolio .portfolio-list {
@@ -413,9 +412,9 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li {
-  margin: 0 40px 0 0;
+  margin: 20px 20px 20px;
   float: left;
-  font-size: 14px;
+  font-size: 20px;
   color: #999999;
   line-height: 16px;
   cursor: pointer;
@@ -661,72 +660,86 @@ nav ul li a {
   transition: all 0.35s ease;
 }
 
-.navv a {
-  padding: 0.5em 0.8em;
-  color: #292929;
-  position: relative;
-  text-decoration: none;
-  font-size: 20px;
-  float: left;
-  margin-right: 15px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  margin-left: 40px;
-}
-
-.navv a::before,
-.navv a::after {
-  content: "";
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  transition: all 0.35s ease;
-  opacity: 0;
-}
-
-.navv a::before {
-  content: "";
-  right: 0;
-  top: 0;
-  border-top: 3px solid #ff7531da;
-  border-right: 3px solid #ff7531da;
-  transform: translate(-100%, 50%);
-}
-
-.navv a:after {
-  content: "";
-  left: 0;
-  bottom: 0;
-  border-bottom: 3px solid #ff7531da;
-  border-left: 3px solid #ff7531da;
-  transform: translate(100%, -50%);
-}
-
-.navv a:hover:before,
-.navv a:hover:after {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-.navv a:hover {
-  color: #292929;
-}
-
 /* paralux*/
-#bgimg-1,
-#bgimg-2,
-#bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#bgimg-2 {
-  background-image: url("images/21.jpg");
-  min-height: 400px;
+.bgimg-2 {
+  background-image: url("21.jpg");
+  min-height: 250px;
 }
-#bgimg-3 {
-  background-image: url("images/8.jpg");
-  min-height: 400px;
+.bgimg-3 {
+  background-image: url("8.jpg");
+  min-height: 250px;
+}
+
+.orange {
+  color: #ff7531da;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+.greyimg {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.resume {
+  font-family: "Poppins", helvetica;
+  font-size: 28px;
+  color: #292929;
+  background-color: #f7f7f7;
+}
+
+/* Blur-zoom Container */
+.img-hover-zoom--blur img {
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: blur(2px);
+  transform: scale(1.2);
+}
+
+/* The Transformation */
+.img-hover-zoom--blur:hover img {
+  filter: blur(0);
+  transform: scale(1);
+}
+
+/*idk paralux*/
+
+.block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+.block h2 {
+  position: center;
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-size: 100px;
+  color: #ff7631;
+  font-weight: 0;
+}
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none;
 }
