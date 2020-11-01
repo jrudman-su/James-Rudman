@@ -63,7 +63,7 @@
           <ul class="nav-menu list-unstyled navv">
             <li><a href="#header" class="smoothScroll">Home</a></li>
             <li><a href="#about" class="smoothScroll">About</a></li>
-            <li><a href="#media" class="smoothScroll">Media</a></li>
+            <li><a href="#media" class="smoothScroll">Videos</a></li>
             <li><a href="#jroll" class="smoothScroll">Resume</a></li>
             <li><a href="#contact" class="smoothScroll">Contact</a></li>
           </ul>
@@ -72,6 +72,27 @@
       </div>
     </nav>
     <!-- End section navbar -->
+
+    <!--- Start Video Popup Models-->
+    <div class="video-popup-container" data-grid="1">
+        <iframe class="video-popup" src="https://www.youtube.com/embed/mzazAYmVqNM?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-popup-container" data-grid="2">
+        <iframe class="video-popup" src="https://www.youtube.com/embed/Er6CPMayEzo?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-popup-container" data-grid="3">
+        <iframe class="video-popup" src="https://www.youtube.com/embed/QhWmVr-7VzE?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-popup-container" data-grid="4">
+        <iframe class="video-popup" src="https://www.youtube.com/embed/mGiUxMYTzxs?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-popup-container" data-grid="5">
+        <iframe class="video-popup" src="https://www.youtube.com/embed/2j4u9mNzRR8?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-popup-container" data-grid="6">
+        <iframe class="video-popup" src="https://www.youtube.com/embed/D-ANCfEA32o?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    <!--- End Video Popup Models-->
 
     <!-- start section header -->
     <div id="header" class="home">
@@ -190,27 +211,65 @@
         </div>
       </div>
     </div>
+
     <!-- end section services -->
 
     <!-- start section portfolio -->
 
       <div id="media" class="block">
-           <img src="images/rome.jpg" data-speed="-1" class="img-parallax">
-            <h2>MEDIA</h2>
+            <h2>VIDEOS</h2>
           </div>
     
     <div id="portfolio" class="text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-37f79442-380b-417e-ad80-ba89db34a5c8"></div>
-</div>
+        <div class="video-row">
+          <div data-grid="1" class="grid-cell">
+            <img class="grid-image" src="images/carti.jpg">
+            <span class="grid-overlay"></span>
+            <div class="grid-title-container">
+                <p class="grid-title">2020 REEL</p>
+            </div>
+          </div>
+          <div data-grid="2" class="grid-cell">
+              <img class="grid-image" src="images/lastday.jpg">
+              <span class="grid-overlay"></span>
+              <div class="grid-title-container">
+                  <p class="grid-title">LASTDAY</p>
+              </div>
+          </div>
+          <div data-grid="3" class="grid-cell">
+              <img class="grid-image" src="images/loudlux.jpg">
+              <span class="grid-overlay"></span>
+              <div class="grid-title-container">
+                  <p class="grid-title">LOUD LUXURY</p>
+              </div>
+          </div>
         </div>
-        <br/>
-        <br/>
-        <div class="text-center">
+        <div class="video-row">
+            <div data-grid="4" class="grid-cell">
+                <img class="grid-image" src="images/screen.jpg">
+                <span class="grid-overlay"></span>
+                <div class="grid-title-container">
+                    <p class="grid-title">EXTERNAL MONITOR</p>
+                </div>
+            </div>          
+            <div data-grid="5" class="grid-cell">
+                <img class="grid-image" src="images/bluehouse.jpg">
+                <span class="grid-overlay"></span>
+                <div class="grid-title-container">
+                    <p class="grid-title">SEMESTER RECAP</p>
+                </div>
+            </div>
+            <div data-grid="6" class="grid-cell">
+                <img class="grid-image" src="images/florence.jpg">
+                <span class="grid-overlay"></span>
+                <div class="grid-title-container">
+                    <p class="grid-title">FLORENCE</p>
+                </div>
+            </div>
+          </div>
+          <div class="spacerr"></div>
+        <!----div class="text-center">
           <h3>Personal Favorites</h3>
         </div>
       </br>
@@ -275,7 +334,8 @@
       </div>
       
     </div>
-    <!-- End section portfolio -->
+  </div>
+    End section portfolio -->
 
 
     
@@ -283,13 +343,13 @@
 
 
 
-    <div id="jroll" class="block">
-        <img src="images/orvietopan.jpg" data-speed="-1" class="img-parallax">
-        <h2>RESUME</h2>
-      </div>
-
+  
 
     <div id="journal" class="text-left paddsection w3-display-container">
+        <div id="jroll" class="block">
+            <h2 class="resume-title">RESUME</h2>
+          </div>
+ 
       <div class="container ">
  
             <!-- Hide this text on small devices -->
@@ -557,6 +617,18 @@
                             <br>
                             •	Representing the iSchool at all iSchool and larger campus events.
                           </p>
+                          <div class="row"> 
+                              <div class="column">
+                                <img src="/images/blackstone.png" style="width:100%">
+                                
+                              </div>
+                              <div class="column">
+                                  <img src="/images/ischool.png" style="width:100%">
+                              </div>
+                              <div class="column">
+                                <p>hi</p>
+                              </div>
+                          </div>
                         <br />
                       </div>
                     </div>
@@ -747,5 +819,7 @@
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
+    <script src="js/videoGrid.js"></script>
+
   </body>
 </html>
