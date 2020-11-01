@@ -54,9 +54,11 @@ $(document).ready(function() {
   let videos = document.getElementsByClassName("video-popup-container");
 
   for (let i = 0; videos.length; i++) {
-    videos[i].addEventListener("click", function(e) {
-      videos[i].style.display = "none";
-      toggleVideo("hide", videos[i].dataset.grid);
-    });
+    if (videos[i]) {
+      videos[i].addEventListener("click", function(e) {
+        videos[i].style.display = "none";
+        toggleVideo("hide", videos[i].dataset.grid);
+      });
+    }
   }
 });

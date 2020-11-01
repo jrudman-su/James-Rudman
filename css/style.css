@@ -154,6 +154,7 @@ p {
 .form-control:focus {
   box-shadow: none;
   outline: 0 none;
+  border: 1px solid #ff7531da;
 }
 
 .paddsection {
@@ -333,6 +334,7 @@ nav ul li a {
   background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .owl-item {
@@ -546,8 +548,8 @@ nav ul li a {
 }
 
 #contact #sendmessage {
-  color: #18d26e;
-  border: 1px solid #18d26e;
+  color: #ff7631;
+  border: 1px solid #ff7631;
   display: none;
   text-align: center;
   padding: 15px;
@@ -797,6 +799,7 @@ nav ul li a {
   display: block;
   text-align: center;
   margin: 2vh 1vw;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .grid-image {
@@ -886,4 +889,53 @@ nav ul li a {
 }
 .spacerr {
   height: 40px;
+}
+
+.resume-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.row-padding {
+  padding-right: 20px;
+  margin-right: 16px;
+}
+
+.bar {
+  width: 0%;
+  transition: width 1.5s ease-in-out;
+}
+
+.full-50 {
+  width: 50%;
+}
+
+.full-75 {
+  width: 75%;
+}
+
+.full-100 {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .resume-row {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .row-padding {
+    width: 70vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .row-center {
+    width: 70vw;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
