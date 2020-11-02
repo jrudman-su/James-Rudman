@@ -161,16 +161,7 @@ $(window).load(function() {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  var elems = document.querySelectorAll(".parallax");
-  var instances = M.Parallax.init(elems, options);
-});
-
 // Or with jQuery
-
-$(document).ready(function() {
-  $(".parallax").parallax();
-});
 
 // I know that the code could be better.
 // If you have some tips or improvement, please let me know.

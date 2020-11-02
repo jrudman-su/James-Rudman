@@ -16,7 +16,7 @@ function toggleVideo(state, id) {
 }
 
 // On load function
-$(document).ready(function() {
+$(window).ready(function() {
   let cells = document.getElementsByClassName("grid-cell");
 
   for (let i = 0; i < cells.length; i++) {
@@ -54,11 +54,9 @@ $(document).ready(function() {
   let videos = document.getElementsByClassName("video-popup-container");
 
   for (let i = 0; videos.length; i++) {
-    if (videos[i]) {
-      videos[i].addEventListener("click", function(e) {
-        videos[i].style.display = "none";
-        toggleVideo("hide", videos[i].dataset.grid);
-      });
-    }
+    videos[i].addEventListener("click", function(e) {
+      toggleVideo("hide", videos[i].dataset.grid);
+      videos[i].style.display = "none";
+    });
   }
 });
