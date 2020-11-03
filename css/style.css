@@ -574,7 +574,7 @@ nav ul li a {
 }
 
 #contact .validation {
-  color: red;
+  color: #ff7631;
   display: none;
   margin: 0 0 20px;
   font-weight: 400;
@@ -800,6 +800,10 @@ nav ul li a {
   text-align: center;
   margin: 2vh 1vw;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.12);
 }
 
 .grid-image {
