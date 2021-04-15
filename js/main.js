@@ -84,7 +84,7 @@ $(document).ready(function() {
     typed.typed({
       strings: [
         "James Rudman.",
-        "Data Driven.",
+        "Creator.",
         "Videographer.",
         "Editor.",
         "Maker."
