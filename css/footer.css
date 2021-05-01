@@ -1,0 +1,35 @@
+footer {
+  height: 200px;
+  background-color: black;
+}
+
+.gray {
+  background-color: #111;
+}
+
+.social-links {
+  list-style: none;
+  height: 100%;
+  width: 300px;
+  justify-content: space-evenly;
+}
+
+.social-links li {
+}
+
+.social-links a {
+}
+
+.social-links img {
+  width: 16px;
+}
+
+#youtube {
+  width: 20px;
+}
+
+@media (max-width: 600px) {
+  footer {
+    height: 150px;
+  }
+}

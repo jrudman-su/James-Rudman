@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400;500;700&display=swap');
+@font-face {
+  font-family: Alliens;
+  src: url('../assets/fonts/Alliens.otf') format('opentype');
+}
+
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+p {
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+.full {
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}

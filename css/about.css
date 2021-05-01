@@ -1,0 +1,158 @@
+.landing {
+  background-color: black;
+  height: 90vh;
+  align-items: center;
+}
+
+.landing-left {
+  height: 90vh;
+  width: 60%;
+  justify-content: center;
+  padding: 32px 32px;
+  color: white;
+}
+
+.landing-left h1 {
+  padding: 32px;
+  font-size: 48px;
+  text-align: left;
+  width: 100%;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+.landing-left p {
+  padding-left: 32px;
+  font-size: 18px;
+}
+
+.landing-right {
+  padding: 32px 0;
+  justify-content: center;
+  height: 90vh;
+  width: 40%;
+}
+
+.landing-right img {
+  padding: 0 16px 0 0;
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+  /* border: 20px solid darkorange; */
+}
+
+.clients-container {
+  margin: 32px 0;
+}
+
+.clients-container h2 {
+  font-size: 48px;
+  margin: 32px;
+}
+
+.clients {
+  margin: 0 auto;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 64px;
+  padding: 32px;
+}
+
+.client {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.client img {
+  height: auto;
+}
+
+.reg {
+  width: 80%;
+}
+
+.large {
+  width: 100%;
+}
+
+.x-large {
+  width: 130%;
+}
+
+@media (max-width: 1200px) {
+  .landing-left p {
+    padding-left: 0px;
+    font-size: 18px;
+  }
+
+  .landing-left h1 {
+    padding-left: 0;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .landing-left p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .landing {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .landing-right {
+    width: 70vw;
+    margin-top: 16px;
+    height: auto;
+  }
+
+  .landing-right img {
+    width: 70vw;
+  }
+
+  .landing-left {
+    padding: 32px 0;
+    height: auto;
+  }
+
+  .landing-left h1 {
+    width: 70vw;
+  }
+
+  .landing-left p {
+    font-size: 20px;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .clients {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .clients {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+
+  .clients-container h2 {
+    font-size: 38px;
+    margin: 32px 0 16px 0;
+  }
+
+  .landing-left p {
+    font-size: 16px;
+  }
+}

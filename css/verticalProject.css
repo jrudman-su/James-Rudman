@@ -1,0 +1,103 @@
+.project {
+  width: 100%;
+  min-height: 80vh;
+  background: #111;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+.project-info {
+  width: 45vw;
+  color: white;
+  padding: 0px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-info h1 {
+  font-size: 48px;
+}
+
+.project-info a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-info p {
+  font-size: 20px;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: white;
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+.back-btn img {
+  width: 36px;
+  margin-right: 8px;
+}
+
+.back-btn p {
+  font-size: 28px;
+}
+
+.project-spacer {
+  height: 50px;
+}
+
+.project-media {
+  position: relative;
+  height: 70vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-media iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .project-info h1 {
+    font-size: 36px;
+  }
+
+  .project-info p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project {
+    padding: 16px 0;
+    flex-direction: column-reverse;
+  }
+
+  .project-media {
+    width: 100%;
+    height: 85vh;
+  }
+
+  .project-media iframe {
+    width: 80%;
+  }
+
+  .project-info {
+    margin: 16px 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-info {
+    margin: 0;
+    width: 80%;
+  }
+}
