@@ -173,7 +173,7 @@
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 234px);
+    grid-template-rows: repeat(4, 234px);
     grid-row-gap: 32px;
   }
 
@@ -212,42 +212,10 @@
   .spacer-card {
     display: none;
   }
-}
-
-@media (max-width: 1000px) {
-  #slider {
-    margin: 32px 0;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 50% 50%;
-  }
-
-  #projects {
-    height: auto;
-  }
-
-  .border {
-    display: none;
-  }
-
-  .card {
-    margin: 32px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .spacer-card {
-    display: none;
-  }
 
   .grid {
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 198px);
+    grid-template-rows: repeat(4, 198px);
     grid-row-gap: 32px;
   }
 
