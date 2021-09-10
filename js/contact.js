@@ -29,6 +29,9 @@ const formSuccess = (data) => {
   if (data.status === 'Sent') {
     let status = document.querySelector('.status-sent');
     status.style.display = 'flex';
+    gtag('event', 'Contacted', {
+      event_name: 'Contacted',
+    });
   } else {
     let status = document.querySelector('.status-fail');
     status.style.display = 'flex';
