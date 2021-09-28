@@ -4,6 +4,10 @@
   src: url('../assets/fonts/Alliens.otf') format('opentype');
 }
 
+html {
+  background-color: black;
+}
+
 html,
 * {
   margin: 0;
