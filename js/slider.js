@@ -30,7 +30,6 @@ window.addEventListener('resize', (e) => {
   height = window.innerHeight;
   input_end = width;
   setOutput(width);
-  // console.log({ width, slider: slider.scrollWidth, output: output_end });
 });
 
 slider.scrollLeft = slider.scrollWidth / 2.0;
