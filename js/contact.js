@@ -70,5 +70,6 @@ form.addEventListener("submit", (e) => {
     url: "https://www.ryankane.io/api/james/contact",
     data: formData,
     success: formSuccess,
+    error: formSuccess,
   });
 });
